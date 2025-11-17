@@ -4,12 +4,30 @@ A full-stack blog application built with MongoDB, Express.js, React.js, and Node
 
 ## 🚀 Deployed Application URLs
 
-### Frontend (Vercel)
-- **Production**: [Add your deployed frontend URL here]
+### Frontend (Netlify/Vercel)
+- **Production**: [Frontend deployment in progress - will be completed tomorrow]
+- **Local Development**: `http://localhost:3000`
 
-### Backend API (Render)
-- **Production**: [Add your deployed backend API URL here]
-- **Health Check**: [Add your backend URL here]/api/health
+### Backend API (Fly.io)
+- **Production**: https://server-crimson-moon-3980.fly.dev
+- **Health Check**: https://server-crimson-moon-3980.fly.dev/api/health
+- **API Base**: https://server-crimson-moon-3980.fly.dev/api
+
+## ✅ Deployment Status
+
+### Completed Deployments
+- ✅ **Backend**: Successfully deployed to Fly.io
+- ✅ **Database**: MongoDB Atlas with connection pooling
+- ✅ **Authentication**: Google OAuth configured
+- ✅ **Sample Data**: 8 blog posts across 6 categories populated
+- 🔄 **Frontend**: Deployment in progress (will be completed tomorrow)
+
+### Production Features Implemented
+- ✅ **Security**: Helmet.js, CORS, input validation
+- ✅ **Performance**: Compression, connection pooling, code splitting
+- ✅ **Monitoring**: Health check endpoints, Morgan logging
+- ✅ **CI/CD**: GitHub Actions pipelines configured
+- ✅ **Environment Variables**: Production-ready configuration
 
 ## 📋 Table of Contents
 - [Features](#features)
