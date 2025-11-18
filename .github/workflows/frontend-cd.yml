@@ -1,0 +1,23 @@
+name: Frontend CD
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'client/**'
+  workflow_run:
+    workflows: ["Frontend CI"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to Vercel
+      run: |
+        curl -X POST ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+      env:
+        VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
