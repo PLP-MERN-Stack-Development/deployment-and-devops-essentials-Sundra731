@@ -5,7 +5,7 @@ A full-stack blog application built with MongoDB, Express.js, React.js, and Node
 ## 🚀 Deployed Application URLs
 
 ### Frontend (Netlify/Vercel)
-- **Production**: [Frontend deployment in progress - will be completed tomorrow]
+- **Production**: [https://mern-blog-netlify.netlify.app/]
 - **Local Development**: `http://localhost:3000`
 
 ### Backend API (Fly.io)
